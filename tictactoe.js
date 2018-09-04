@@ -1,19 +1,27 @@
 /*
-  Galo:
-  Available functions:
+  Some notes:
+  There are a few ways to write JS functions:
+  There's the ES2015/javascript ways:
 
-  PRINTING
+    function doSomething(thing) {
+      ...
+    }
 
-  - printIcon(positionObject, isPlayerOne): Prints an icon for at a given poistion on the board for a given player
-  - printMessage(message): Prints messages on the the screen
-  - clearBoard(): Empties the board
-  - clearMessage(): Empties the message space
+    doSomething = function(thing) {
+      ...
+    }
+  There's the new ES2016+/ES6+/ECMAScript ways:
+    doSomething = () => {
+      ...
+    }
 
-  POSITIONING
-  - getPosition(positionObject): Returns X or O for a given board position
-  - getLine(line): Returns an array of elements in a given line
-  - getColumn(column): Returns an array of elements in a given column
+    doSomething = () => ...
+
+    They are all valid and most of them exist in the files of this project.
+    Except for very small details they work about the same.
+    I'd dare you to change. Both the function below and the following functions you might do to the ES2016+ way.
 */
+var isPlayerOne = true;
 
 function clickedPlace(positionObject) {
   console.log(positionObject);

@@ -1,0 +1,14 @@
+.galo-item {
+  height: 20px;
+  width: 30px;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.galo-item:hover {
+  cursor: pointer;
+}
+
+.game-container {
+  margin-top: 20px;
+}

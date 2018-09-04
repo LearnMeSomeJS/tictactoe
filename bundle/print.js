@@ -1,6 +1,6 @@
 // Prints Icon to a given position
 printIcon = (positionObject, isPlayerOne = true) => {
-  const iconClass = isPlayerOne ? 'fas fa-times' : 'fas fa-circle';
+  const iconClass = isPlayerOne ? 'fas fa-times' : 'far fa-circle';
   const html =`<i class="${iconClass}"></i>`;
   elementBuilder(positionObject).html(html);
 }
